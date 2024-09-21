@@ -8,6 +8,14 @@ body {
   font-family: "iranyekanwebregular", Arial, Helvetica, sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -28,7 +36,6 @@ header {
 
 .header-ul {
   display: flex;
-  list-style: none;
 }
 
 .header-ul li {
@@ -38,7 +45,6 @@ header {
 }
 
 .header-ul li a {
-  text-decoration: none;
   color: #303030;
 }
 
@@ -63,4 +69,117 @@ header {
 .more-menu img {
   width: 8px;
   margin-right: 8px;
+}
+
+.hamburger-icon {
+  width: 27px;
+  display: none;
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 100;
+  width: 100%;
+  font-family: YekanBakhMedium;
+  transform: translateY(-100%);
+}
+
+.cross-icon {
+  width: 100%;
+  text-align: left;
+  padding: 25px 0;
+}
+
+.cross-icon img {
+  padding: 10px 30px;
+}
+
+.hamburger-menu-items {
+  padding: 10px 30px;
+}
+
+.hamburger-menu-items a {
+  color: #000;
+  display: inline-block;
+  padding: 3px 0;
+}
+
+.hamburger-menu-items div {
+  height: 1px;
+  background-color: #dfe1e4;
+  width: 90%;
+  margin: 8px 0 8px 8px;
+}
+
+.more-item {
+  display: flex;
+  background-color: #eee;
+  padding: 20px 50px;
+  align-items: center;
+}
+
+.more-item img {
+  width: 15px;
+  margin-right: 5px;
+}
+
+.more-item a {
+  color: #28457b;
+  font-size: 0.85rem;
+}
+
+.show-hamburger-menu {
+  animation: fadeInDown 0.35s forwards;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    width: 940px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  header {
+    width: auto;
+    padding: 20px 60px;
+  }
+
+  .header-ul li {
+    margin: 0 10px;
+  }
+
+  .header-ul li:last-child {
+    display: none;
+  }
+
+  .logo {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: auto;
+    padding: 10px 8px;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .header-ul {
+    display: none;
+  }
 }
