@@ -28,6 +28,7 @@ header {
   position: sticky;
   top: 0;
   transition: all 0.3s ease;
+  z-index: 100;
 }
 
 .logo {
@@ -199,6 +200,82 @@ header {
 
 .product-menu a p:last-child {
   font-size: 0.7rem;
+}
+
+.banner {
+  width: 1170px;
+  padding: 124px 60px 80px;
+  background-image: linear-gradient(135deg, #21254e, #2b4a83);
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.banner-text h3 {
+  font-family: YekanBakhHeavy;
+  font-size: 2rem;
+}
+
+.banner-text p {
+  font-size: 1.15rem;
+  margin: 25px 0;
+  line-height: 2.5rem;
+}
+
+.banner-button {
+  margin-top: 60px;
+  font-size: 1rem;
+  font-family: YekanBakhBold;
+}
+
+.register {
+  color: #000;
+  background-color: #ffd900;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.login {
+  color: #fff;
+  background-color: #435a8a;
+  padding: 6px 14px;
+  border-radius: 10px;
+  border: none;
+}
+
+.banner-image img {
+  width: 500px;
+}
+
+.go-down {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 58px;
+}
+
+.go-down div {
+  background-image: url("../images/arrowbottom.svg");
+  width: 164px;
+  height: 78px;
+}
+
+.go-down img {
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  font-size: 2rem;
+  font-weight: 900;
+  position: relative;
+  top: -70px;
+  cursor: pointer;
 }
 
 @keyframes fadeInDown {
