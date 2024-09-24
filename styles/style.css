@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: none;
+  outline: none;
 }
 
 body {
@@ -234,7 +236,7 @@ header {
   color: #000;
   background-color: #ffd900;
   padding: 6px 14px;
-  border: none;
+
   border-radius: 10px;
   margin-left: 10px;
 }
@@ -244,7 +246,6 @@ header {
   background-color: #435a8a;
   padding: 6px 14px;
   border-radius: 10px;
-  border: none;
 }
 
 .banner-image img {
@@ -278,6 +279,80 @@ header {
   cursor: pointer;
 }
 
+.online-payment {
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.online-payment img {
+  width: 450px;
+  height: 530px;
+}
+
+.section-text {
+  width: 530px;
+  margin: 30px 0;
+}
+
+.section-text h2 {
+  color: #747480;
+  font-family: YekanBakhMedium;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: 20px 0 5px;
+}
+
+.section-text h3 {
+  color: #303030;
+  font-family: YekanBakhHeavy;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 5px 0 10px;
+}
+
+.section-text p {
+  padding-bottom: 40px;
+  margin-top: 16px;
+  line-height: 40px;
+  text-align: justify;
+  border-bottom: 1px solid #dfe1e4;
+  color: #303030;
+}
+
+.section-links {
+  display: flex;
+  margin-top: 40px;
+  font-family: YekanBakhMedium;
+}
+
+.section-links .first-button {
+  padding: 6px 14px;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  background-color: #ffd900;
+  color: #000;
+}
+
+.section-links .second-button {
+  display: flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  background-color: rgba(232, 239, 254, 0.7);
+  color: #28457b;
+}
+
+.section-links .second-button img {
+  width: 18px;
+  height: 15px;
+  margin-right: 5px;
+}
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -308,6 +383,10 @@ header {
 
   .banner-image img {
     width: 430px;
+  }
+
+  .online-payment {
+    width: 940px;
   }
 }
 
@@ -350,6 +429,16 @@ header {
   .banner-button {
     margin-top: 40px;
   }
+
+  .online-payment {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-text {
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -370,6 +459,17 @@ header {
     margin-left: 8px;
     margin-right: 8px;
   }
+
+  .section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .online-payment img {
+    width: 540px;
+    height: 480px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -381,10 +481,24 @@ header {
     font-size: 1.2rem;
     text-align: right;
   }
+
   .banner-text p {
     text-align: justify;
     margin-top: 20px;
     font-size: 1rem;
     line-height: 2rem;
+  }
+
+  .online-payment .second-image {
+    display: none;
+  }
+
+  .section-text {
+    width: 80%;
+    padding: 0 10px;
+  }
+
+  .section-text h3 {
+    font-size: 1.5rem;
   }
 }
