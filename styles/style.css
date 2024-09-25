@@ -431,6 +431,41 @@ header {
   border-top: 1px solid #d0d7d4;
 }
 
+.start-box {
+  width: 1170px;
+  height: 220px;
+  margin: 50px auto auto;
+  border: 1px solid #c0c0c0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-box h4 {
+  font-family: YekanBakhHeavy;
+  font-size: 1.7rem;
+}
+
+.start-box p {
+  font-family: YekanBakhMedium;
+  font-size: 1.4rem;
+  color: #747480;
+  margin-top: 10px;
+}
+
+.start-box a {
+  font-family: iranyekanwebmedium;
+  font-size: 0.9rem;
+  height: 28px;
+  line-height: 28px;
+  padding: 1px 14px 0 14px;
+  background-color: #ffd900;
+  color: #000;
+  border-radius: 10px;
+}
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -497,6 +532,10 @@ header {
   .items .item {
     padding: 18px 0 20px 50px;
   }
+
+  .start-box {
+    width: 940px;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -558,6 +597,11 @@ header {
     width: auto;
     padding: 0 35px;
   }
+
+  .start-box {
+    width: calc(100% - 76px);
+    margin: 0 38px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -606,6 +650,15 @@ header {
   .items .item {
     padding: 18px 0 20px 20px;
   }
+
+  .start-box {
+    width: calc(100% - 16px);
+    margin: 0 8px;
+  }
+
+  .start-box p {
+    margin: 12px 0;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -644,5 +697,18 @@ header {
 
   .items .item {
     padding: 18px 5px;
+  }
+
+  .start-box {
+    height: 180px;
+  }
+
+  .start-box h4 {
+    font-size: 1.2rem;
+  }
+
+  .start-box p {
+    font-size: 1rem;
+    margin: 10px 0;
   }
 }
